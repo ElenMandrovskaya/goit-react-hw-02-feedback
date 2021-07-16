@@ -1,27 +1,25 @@
 import styled from "@emotion/styled";
 
-export const ButtonContainer = styled.div`
-display: flex;
-align-items: center;
-justify-content: center;
-margin-bottom: 25px;
+export const List = styled.ul`
+  display: flex;
+  justify-content: center;
 `;
 
-export const Button = styled.button`
-  min-width: 150px;
-  padding: 2px 32px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+export const Item = styled.li`
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+`;
+
+export const Btn = styled.button`
+  min-width: 200px;
+  height: 50px;
   border-radius: 4px;
-  border-style: none;
   cursor: pointer;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-  text-transform: capitalize;
-  background-color: #2196f3;
-&:not(:last-child){
-margin-right: 15px;
-}
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #ff0d82;
+  box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+  border: none;
 `;
